@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кирилл Перебиковский | Специалист по ИБ и Разработчик</title>
+  <meta name="description" content="Портфолио Кирилла Перебиковского (KP) — Разработчик и специалист по информационной безопасности. Проектирование защищенных сервисов, WebAuthn, мониторинг.">
+  <meta name="author" content="Кирилл Перебиковский (Kirill Perebikovskii)">
+  <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Кирилл Перебиковский | Специалист по ИБ и Разработчик">
+  <meta property="og:description" content="Портфолио инженера по информационной безопасности и разработчика. Защищенные системы, WebAuthn, телеметрия инфраструктуры.">
+  <meta property="og:image" content="./assets/images/favicon.svg">
+  <meta name="twitter:card" content="summary">
+
+  <!-- Schema.org Person JSON-LD Metadata -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kirill Perebikovskii",
+    "alternateName": "KP",
+    "jobTitle": "Cybersecurity Specialist & Software Developer",
+    "alumniOf": [
+      {
+        "@type": "EducationalOrganization",
+        "name": "Higher School of Economics (HSE MIEM)",
+        "address": "Moscow"
+      },
+      {
+        "@type": "EducationalOrganization",
+        "name": "Perm State University (PSU)",
+        "address": "Perm"
+      }
+    ],
+    "knowsAbout": [
+      "Cybersecurity",
+      "Enterprise DLP Systems",
+      "Linux Security Hardening",
+      "Docker & Kubernetes",
+      "GitLab CI/CD",
+      "Prometheus & Grafana",
+      "FIDO2 / WebAuthn",
+      "Python",
+      "Applied Machine Learning in Cybersecurity"
+    ],
+    "url": "https://avroQ.github.io/Portfolio/",
+    "email": "kp.godbless@gmail.com",
+    "sameAs": [
+      "https://github.com/avroQ",
+      "https://t.me/same33322"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="brand" aria-label="Home">
+        <div class="brand-icon">&gt;_</div>
+        <div class="brand-title">
+          <span class="handle">KP</span>
+          <span class="role" data-lang="ru">Информационная безопасность</span>
+          <span class="role" data-lang="en">Cybersecurity &amp; Dev</span>
+        </div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li>
+            <a href="#projects" data-lang="ru">Проекты</a>
+            <a href="#projects" data-lang="en">Projects</a>
+          </li>
+          <li>
+            <a href="#education" data-lang="ru">Образование</a>
+            <a href="#education" data-lang="en">Education</a>
+          </li>
+          <li>
+            <a href="#certificates" data-lang="ru">Сертификаты</a>
+            <a href="#certificates" data-lang="en">Certificates</a>
+          </li>
+          <li>
+            <a href="#skills" data-lang="ru">Навыки</a>
+            <a href="#skills" data-lang="en">Skills</a>
+          </li>
+          <li>
+            <a href="#contacts" data-lang="ru">Контакты</a>
+            <a href="#contacts" data-lang="en">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="lang-toggle" class="btn-lang" type="button" aria-label="Switch language">
+          <span class="lang-globe">🌐</span>
+          <span>EN</span>
+        </button>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="content">
+
+    <!-- Hero Section -->
+    <section id="hero" class="section-hero">
+      <div class="container">
+        <div class="hero-badge">
+          <span class="status-dot"></span>
+          <span data-lang="ru">Информационная безопасность &amp; Программная инженерия</span>
+          <span data-lang="en">Cybersecurity &amp; Software Engineering</span>
+        </div>
+
+        <h1 class="hero-name" data-lang="ru">Кирилл Перебиковский</h1>
+        <h1 class="hero-name" data-lang="en">Kirill Perebikovskii</h1>
+
+        <div class="hero-title" data-lang="ru">Разработчик &amp; Специалист по информационной безопасности</div>
+        <div class="hero-title" data-lang="en">Software Engineer &amp; Cybersecurity Specialist</div>
+
+        <p class="hero-tagline" data-lang="ru">Проектирование и разработка защищенных сервисов, практическая безопасность веб-приложений и операционный мониторинг инфраструктуры.</p>
+        <p class="hero-tagline" data-lang="en">Designing secure software services, web application security, and operational infrastructure monitoring.</p>
+
+        <p class="hero-bio" data-lang="ru">Специализируюсь на стыке практической информационной безопасности и программной инженерии. Занимаюсь разработкой защищенных сервисов на Python, исследованием устойчивых механизмов аутентификации (WebAuthn/FIDO2) и противодействием фишингу и веб-угрозам. Имею практический опыт администрирования корпоративных DLP-систем, аудита безопасности серверов Linux, анализа уязвимостей и внедрения систем мониторинга доступности сервисов (Prometheus, Grafana). Мой подход к работе — внимание к деталям архитектуры, минимизация поверхности атаки и создание надежных, поддерживаемых решений.</p>
+        <p class="hero-bio" data-lang="en">I specialize at the intersection of practical information security and software engineering. My work focuses on building secure Python services, exploring phishing-resistant authentication mechanisms (WebAuthn/FIDO2), and analyzing web threats and malware. I have hands-on experience administering enterprise DLP systems, hardening Linux servers, performing vulnerability assessments, and implementing telemetry and alerting stacks (Prometheus, Grafana). My engineering philosophy centers on defensive architecture, minimizing attack surfaces, and delivering robust, maintainable systems.</p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <span data-lang="ru">Ключевые проекты</span>
+            <span data-lang="en">Key Projects</span>
+            <span>&rarr;</span>
+          </a>
+          <a href="#skills" class="btn btn-secondary">
+            <span data-lang="ru">Навыки и стек</span>
+            <span data-lang="en">Skills &amp; Tooling</span>
+          </a>
+          <a href="https://github.com/avroQ" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+            <span>GitHub · KP</span>
+            <span>&#8599;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">// 01. CORE ENGINEERING</div>
+          <h2 class="section-title" data-lang="ru">Ключевые проекты</h2>
+          <h2 class="section-title" data-lang="en">Key Projects</h2>
+          <p class="section-subtitle" data-lang="ru">Инженерные прототипы и системы с фокусом на криптографическую защиту, веб-безопасность и мониторинг.</p>
+          <p class="section-subtitle" data-lang="en">Engineering systems focusing on cryptographic defense, web security, and infrastructure monitoring.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Key Project 1: Phishing-Resistant-Auth-Prototype -->
+          <article class="project-card">
+            <div class="project-top">
+              <div class="project-title-group">
+                <h3 class="project-title">Phishing-Resistant-Auth-Prototype</h3>
+                <div class="project-subtitle" data-lang="ru">Прототип фишинг-устойчивой аутентификации на базе WebCrypto API и расширения Manifest V3</div>
+                <div class="project-subtitle" data-lang="en">Phishing-Resistant Authentication Prototype via WebCrypto API &amp; Manifest V3 Extension</div>
+              </div>
+              <a href="https://github.com/avroQ/Phishing-Resistant-Auth-Prototype" target="_blank" rel="noopener noreferrer" class="project-repo-link" aria-label="View Phishing-Resistant-Auth-Prototype on GitHub">
+                <span>Code Repository</span>
+                <span>&#8599;</span>
+              </a>
+            </div>
+
+            <div class="tech-stack-pills">
+              <span class="tech-pill">JavaScript (Node.js)</span>
+              <span class="tech-pill">WebCrypto API</span>
+              <span class="tech-pill">Ed25519 / HKDF</span>
+              <span class="tech-pill">Manifest V3 Extension</span>
+              <span class="tech-pill">IndexedDB</span>
+              <span class="tech-pill">SQLite / PostgreSQL</span>
+              <span class="tech-pill">Docker</span>
+            </div>
+
+            <!-- Russian Version -->
+            <div class="project-content" data-lang="ru">
+              <div class="project-block">
+                <div class="block-heading">Проблема:</div>
+                <p class="block-text">Классические факторы аутентификации (пароли, SMS-коды и TOTP RFC 6238) уязвимы к современным атакам Adversary-in-the-Middle (AiTM) с обратными прокси (Evilginx2, Tycoon 2FA), перехватывающими сессионные токены в реальном времени из-за отсутствия криптографической привязки к каналу и origin. Аппаратный WebAuthn/FIDO2 решает проблему, но требует физических токенов и усложняет аварийное восстановление доступа, а синхронизируемые Cloud Passkeys подвержены локальным атакам подмены интерфейса (prompt spoofing) и не гарантируют неотчуждаемость ключей по стандарту NIST SP 800-63B AAL3. Возникла задача разработать и верифицировать программную альтернативу, эмулирующую origin-binding WebAuthn в браузере с анализом границ безопасности.</p>
+              </div>
+
+              <div class="project-block">
+                <div class="block-heading">Архитектура решения:</div>
+                <p class="block-text">Система спроектирована на JavaScript с изоляцией доверенных и недоверенных контекстов исполнения:
+                <br>• <strong>Клиентская часть (Chrome Extension Manifest V3)</strong>: фоновый Service Worker выступает в роли доверенной вычислительной базы (TCB), генерирует мастер-ключи, выполняет иерархическую деривацию доменных ключей через HKDF (RFC 5869, HMAC-SHA-256) и формирует асимметричные цифровые подписи Ed25519 (RFC 8032) через WebCrypto API. Недоверенный Content Script в isolated world транслирует DOM-события страницы (<code>domain-auth-request</code>) через <code>chrome.runtime</code> API с обязательной проверкой <code>sender.origin</code>. Изолированный Popup UI предотвращает фоновые атаки криптографического оракула, требуя явного подтверждения пользователя. Доменные ключи хранятся в IndexedDB как неизвлекаемые объекты <code>CryptoKey</code> (<code>extractable: false</code>).
+                <br>• <strong>Криптографический протокол Challenge-Response</strong>: подписывается каноническая структура <em>M = c ∥ d<sub>norm</sub> ∥ "auth" ∥ t</em>, связывающая одноразовый 256-битный серверный челлендж, нормализованный origin домена и метку времени.
+                <br>• <strong>Серверная часть (Node.js/Express)</strong>: выдает челленджи со строгим TTL (60 с), верифицирует подпись Ed25519 и выдает JWT; персистентность профилей реализована с поддержкой SQLite (better-sqlite3) и PostgreSQL.</p>
+              </div>
+
+              <div class="project-block">
+                <div class="block-heading">Результаты в ИБ и разработке:</div>
+                <ul class="outcomes-list">
+                  <li>Формализована модель угроз по методологиям STRIDE и Attack Trees (деревья атак), определены границы доверия WebCrypto в браузере;</li>
+                  <li>11 эмпирических сценариев тестирования подтвердили полную нейтрализацию перехвата учетных данных при AiTM-фишинге (отказ аутентификации на нелегитимном origin);</li>
+                  <li>Гарантированная защита от replay-атак за счет одноразовых 256-битных челленджей (ошибка 409 Conflict при попытке повторного использования);</li>
+                  <li>Нейтрализация подделки запросов через XSS благодаря валидации <code>sender.origin</code> на уровне изолированного Service Worker и обязательному подтверждению в Popup UI;</li>
+                  <li>Отсутствие разделяемых секретов и паролей на сервере — хранятся исключительно открытые ключи и метаданные;</li>
+                  <li>Модульная архитектура с временем валидации подписи менее 25 мс и поддержкой двух СУБД (SQLite / PostgreSQL).</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- English Version -->
+            <div class="project-content" data-lang="en">
+              <div class="project-block">
+                <div class="block-heading">Problem:</div>
+                <p class="block-text">Traditional authentication factors (passwords, SMS codes, and TOTP RFC 6238) are fundamentally vulnerable to real-time Adversary-in-the-Middle (AiTM) reverse-proxy phishing (Evilginx2, Tycoon 2FA) due to the lack of origin-bound and channel-bound cryptographic ties. Hardware-backed WebAuthn/FIDO2 mitigates this but introduces deployment hurdles and complex recovery paths, while synced Cloud Passkeys remain exposed to local prompt spoofing/overlay attacks and fail NIST SP 800-63B AAL3 non-exportability. This project addressed the design, implementation, and security boundary analysis of a software-based authenticator emulating WebAuthn origin-binding via WebCrypto API.</p>
+              </div>
+
+              <div class="project-block">
+                <div class="block-heading">Architecture:</div>
+                <p class="block-text">Built in JavaScript with rigorous isolation between trusted and untrusted execution contexts:
+                <br>• <strong>Client Architecture (Chrome Extension Manifest V3)</strong>: The background Service Worker functions as an isolated Trusted Computing Base (TCB) executing in a separate thread without DOM access. It performs domain key derivation via HKDF (RFC 5869, HMAC-SHA-256) and asymmetric signing using Ed25519 (RFC 8032) via WebCrypto API. An untrusted Content Script in an isolated world acts as a transport bridge for DOM custom events (<code>domain-auth-request</code>) using <code>chrome.runtime</code> messaging with <code>sender.origin</code> verification. An isolated Popup UI prompts explicit user approval to thwart silent background cryptographic oracle attacks. Keys are stored in IndexedDB as non-extractable <code>CryptoKey</code> objects (<code>extractable: false</code>).
+                <br>• <strong>Challenge-Response Protocol</strong>: Signs a canonical structure <em>M = c ∥ d<sub>norm</sub> ∥ "auth" ∥ t</em>, binding a single-use 256-bit server challenge, normalized origin, and timestamp.
+                <br>• <strong>Server Architecture (Node.js/Express)</strong>: Issues time-bounded challenges (60s TTL), verifies Ed25519 signatures, and grants JWTs; supports dual-database persistence across SQLite (better-sqlite3) and PostgreSQL.</p>
+              </div>
+
+              <div class="project-block">
+                <div class="block-heading">Security &amp; Development Outcomes:</div>
+                <ul class="outcomes-list">
+                  <li>Conducted comprehensive threat modeling using STRIDE and Attack Trees to define WebCrypto security boundaries;</li>
+                  <li>11 empirical attack scenarios validated complete mitigation of AiTM reverse-proxy phishing (strict authentication rejection upon origin mismatch);</li>
+                  <li>Robust replay attack protection via single-use 256-bit server-side challenges (resulting in 409 Conflict on replay);</li>
+                  <li>XSS-induced challenge forgery neutralized via browser-enforced <code>sender.origin</code> checks in the isolated Service Worker and mandatory user confirmation;</li>
+                  <li>Zero shared secrets or passwords stored on the server — only public keys and metadata are persisted;</li>
+                  <li>High-performance backend with signature verification latency under 25ms and pluggable dual persistence (SQLite / PostgreSQL).</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- Key Project 2: -ML-Web-malware-detection -->
+          <article class="project-card">
+            <div class="project-top">
+              <div class="project-title-group">
+                <h3 class="project-title">-ML-Web-malware-detection</h3>
+                <div class="project-subtitle" data-lang="ru">Детектирование вредоносного веб-контента на основе машинного обучения (Хакатон)</div>
+                <div class="project-subtitle" data-lang="en">Machine Learning Web Malware Detection (Hackathon Project)</div>
+              </div>
+              <a href="https://github.com/avroQ/-ML-Web-malware-detection" target="_blank" rel="noopener noreferrer" class="project-repo-link" aria-label="View -ML-Web-malware-detection on GitHub">
+                <span>Code Repository</span>
+                <span>&#8599;</span>
+              </a>
+            </div>
+
+            <div class="tech-stack-pills">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Scikit-learn</span>
+              <span class="tech-pill">XGBoost</span>
+              <span class="tech-pill">Pandas</span>
+              <span class="tech-pill">NumPy</span>
+              <span class="tech-pill">BeautifulSoup</span>
+              <span class="tech-pill">Flask / FastAPI</span>
+              <span class="tech-pill">Docker</span>
+            </div>
+
+            <!-- Russian Version -->
+            <div class="project-content" data-lang="ru">
+              <div class="project-block">
+                <div class="block-heading">Проблема:</div>
+                <p class="block-text">Сигнатурные антивирусные базы и статические правила WAF часто пропускают вредоносные скрипты с обфускацией, динамической генерацией полезной нагрузки или использованием легитимных функций JavaScript (eval, DOM-манипуляции). В рамках хакатона требовалось создать прототип системы для быстрого автоматического выявления вредоносного кода в веб-трафике с высокой точностью.</p>
+              </div>
+
+              <div class="project-block">
+                <div class="block-heading">Архитектура решения:</div>
+                <p class="block-text">Конвейер обработки включает модуль извлечения признаков (энтропия строк, частотные n-граммы токенов, количество и глубина специфических вызовов JS API, структурные метрики DOM) и модуль инференса на основе ансамблевых моделей градиентного бустинга и случайных лесов. Решение оформлено в виде микросервиса, принимающего веб-страницы и JS-скрипты на вход и возвращающего оценку степени угрозы с интерпретацией ключевых индикаторов.</p>
+              </div>
+
+              <div class="project-block">
+                <div class="block-heading">Результаты в ИБ и разработке:</div>
+                <ul class="outcomes-list">
+                  <li>Успешная разработка и валидация модели в условиях ограниченного времени хакатона;</li>
+                  <li>Высокие показатели точности (Precision/Recall &gt; 0.93) на тестовых наборах реального обфусцированного веб-вредоносного ПО;</li>
+                  <li>Скорость оценки подозрительного скрипта менее 100 мс, что позволяет использовать сервис для предварительной фильтрации трафика;</li>
+                  <li>Интерпретируемость детекта: сервис возвращает конкретные признаки и фрагменты кода, вызвавшие срабатывание.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- English Version -->
+            <div class="project-content" data-lang="en">
+              <div class="project-block">
+                <div class="block-heading">Problem:</div>
+                <p class="block-text">Traditional signature-based detection and static WAF rules often fail against obfuscated web malware, polymorphic malicious JavaScript, and zero-day payload injection. Developed as a fast-paced hackathon project, the challenge was to design and train an automated machine learning system capable of detecting malicious web content with high accuracy and low false-positive rates.</p>
+              </div>
+
+              <div class="project-block">
+                <div class="block-heading">Architecture:</div>
+                <p class="block-text">The processing pipeline features an automated feature extractor (Shannon string entropy, lexical token n-grams, suspicious JavaScript API call frequency, and structural HTML/DOM properties) coupled with an ensemble gradient boosting classifier (XGBoost/RandomForest). The inference engine is packaged into a lightweight REST microservice that evaluates incoming payloads and returns confidence scores alongside indicator breakdowns.</p>
+              </div>
+
+              <div class="project-block">
+                <div class="block-heading">Security &amp; Development Outcomes:</div>
+                <ul class="outcomes-list">
+                  <li>Successfully built, trained, and benchmarked within strict hackathon deadlines;</li>
+                  <li>Achieved strong classification benchmarks (Precision and Recall exceeding 0.93 on real-world obfuscated malware datasets);</li>
+                  <li>Sub-100ms inference time per payload, making it suitable for edge gateway filtering;</li>
+                  <li>Transparent risk reporting with granular feature contribution breakdowns for security analysts.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- Key Project 3: Monitoring-Bot -->
+          <article class="project-card">
+            <div class="project-top">
+              <div class="project-title-group">
+                <h3 class="project-title">Monitoring-Bot</h3>
+                <div class="project-subtitle" data-lang="ru">Бот оперативного мониторинга серверов безопасности</div>
+                <div class="project-subtitle" data-lang="en">Operational Infrastructure Security Monitoring Bot</div>
+              </div>
+              <a href="https://github.com/avroQ/Monitoring-Bot" target="_blank" rel="noopener noreferrer" class="project-repo-link" aria-label="View Monitoring-Bot on GitHub">
+                <span>Code Repository</span>
+                <span>&#8599;</span>
+              </a>
+            </div>
+
+            <div class="tech-stack-pills">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">aiogram / asyncio</span>
+              <span class="tech-pill">Linux system APIs (psutil, systemd)</span>
+              <span class="tech-pill">Docker</span>
+              <span class="tech-pill">SQLite</span>
+            </div>
+
+            <!-- Russian Version -->
+            <div class="project-content" data-lang="ru">
+              <div class="project-block">
+                <div class="block-heading">Проблема:</div>
+                <p class="block-text">Администраторам безопасности и инженерам инфраструктуры необходим быстрый канал получения критических уведомлений о сбоях в работе серверов и защитных служб без необходимости постоянного открытия тяжелых веб-дашбордов или прямого SSH-доступа с мобильных устройств.</p>
+              </div>
+
+              <div class="project-block">
+                <div class="block-heading">Архитектура решения:</div>
+                <p class="block-text">Асинхронный Telegram-бот, взаимодействующий с локальными демонами и системными интерфейсами Linux. Сервис отслеживает нагрузку на вычислительные ресурсы (CPU, RAM, состояние дисковых накопителей), статус критических демонов (systemd services), доступность сетевых портов и целостность правил брандмауэра. Реализована строгая модель контроля доступа (авторизация по белому списку Telegram ID), шифрование локальных данных и санитаризация команд для предотвращения инъекций.</p>
+              </div>
+
+              <div class="project-block">
+                <div class="block-heading">Результаты в ИБ и разработке:</div>
+                <ul class="outcomes-list">
+                  <li>Мгновенное оповещение дежурного специалиста (задержка доставки алерта &lt; 2 секунд);</li>
+                  <li>Безопасный интерфейс для выполнения регламентных операций (перезапуск упавших служб, сбор свежих логов инцидентов) без открытия прямого SSH-доступа во внешнюю сеть;</li>
+                  <li>Минимальное потребление ресурсов на хосте (&lt; 40 МБ RAM), отсутствие влияния на целевые процессы безопасности;</li>
+                  <li>Стабильная непрерывная работа в изолированном Docker-контейнере.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- English Version -->
+            <div class="project-content" data-lang="en">
+              <div class="project-block">
+                <div class="block-heading">Problem:</div>
+                <p class="block-text">Security administrators and systems engineers require instant, reliable alert delivery and health status checks for critical servers and security services without relying on heavy web dashboards or opening direct remote SSH sessions from untrusted networks.</p>
+              </div>
+
+              <div class="project-block">
+                <div class="block-heading">Architecture:</div>
+                <p class="block-text">An asynchronous Telegram bot integrated directly with Linux system diagnostics and process managers. The service continuously monitors host resource consumption (CPU, memory, disk thresholds), systemd daemon states, security service uptimes, and firewall status. It incorporates strict security controls: hardcoded administrator whitelist verification (RBAC), sanitized command execution parsers to eliminate injection risks, and encrypted configuration storage.</p>
+              </div>
+
+              <div class="project-block">
+                <div class="block-heading">Security &amp; Development Outcomes:</div>
+                <ul class="outcomes-list">
+                  <li>Near-instantaneous incident alerting (notification delivery latency under 2 seconds upon threshold breach);</li>
+                  <li>Secure diagnostic interface for executing routine health tasks and retrieving log snippets without external SSH exposure;</li>
+                  <li>Low resource footprint (&lt; 40 MB RAM), ensuring zero performance penalty on monitored security infrastructure;</li>
+                  <li>Containerized deployment with automated recovery and health check probes.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional Projects Section (Compact List) -->
+    <section id="additional-projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">// 02. PRACTICE &amp; EXPLORATION</div>
+          <h2 class="section-title" data-lang="ru">Дополнительные проекты</h2>
+          <h2 class="section-title" data-lang="en">Additional Projects</h2>
+          <p class="section-subtitle" data-lang="ru">Компактная подборка учебных и исследовательских работ по криптографии и веб-разработке.</p>
+          <p class="section-subtitle" data-lang="en">Compact overview of focused engineering and cryptography exercises.</p>
+        </div>
+
+        <div class="additional-grid">
+          <!-- crispy-doodle -->
+          <article class="additional-card">
+            <div>
+              <div class="additional-title-row">
+                <h3 class="additional-title">crispy-doodle</h3>
+                <span class="tech-pill">PHP / Security</span>
+              </div>
+              <p class="additional-desc" data-lang="ru">Учебный проект, демонстрирующий реализацию механизмов защиты веб-приложений от межсайтового скриптинга (XSS) — контекстное экранирование вывода, валидация входящих данных и настройка заголовков Content Security Policy (CSP).</p>
+              <p class="additional-desc" data-lang="en">Hands-on implementation of defensive controls against Cross-Site Scripting (XSS) in PHP applications, featuring contextual output encoding, strict input sanitization, and Content Security Policy (CSP) headers.</p>
+            </div>
+            <div class="additional-footer">
+              <span class="cert-issuer" data-lang="ru">Защита от XSS на PHP</span>
+              <span class="cert-issuer" data-lang="en">PHP XSS Defense</span>
+              <a href="https://github.com/avroQ/crispy-doodle" target="_blank" rel="noopener noreferrer" class="btn-cert-pdf" aria-label="View crispy-doodle on GitHub">GitHub &#8599;</a>
+            </div>
+          </article>
+
+          <!-- Weather app -->
+          <article class="additional-card">
+            <div>
+              <div class="additional-title-row">
+                <h3 class="additional-title">Weather App</h3>
+                <span class="tech-pill">TypeScript / REST API</span>
+              </div>
+              <p class="additional-desc" data-lang="ru">Веб-приложение прогноза погоды, разработанное на TypeScript и Vite с контейнеризацией в Docker. Реализует интеграцию внешних REST API, обработку асинхронных запросов и адаптивный интерфейс.</p>
+              <p class="additional-desc" data-lang="en">Responsive weather forecast web application built with TypeScript, Vite, and Docker, featuring asynchronous REST API communication and modern interface design.</p>
+            </div>
+            <div class="additional-footer">
+              <span class="cert-issuer" data-lang="ru">TypeScript &amp; REST API</span>
+              <span class="cert-issuer" data-lang="en">TypeScript &amp; REST API</span>
+              <a href="https://github.com/avroQ/Weather-app" target="_blank" rel="noopener noreferrer" class="btn-cert-pdf" aria-label="View Weather App on GitHub">GitHub &#8599;</a>
+            </div>
+          </article>
+
+          <!-- Affine-Cipher -->
+          <article class="additional-card">
+            <div>
+              <div class="additional-title-row">
+                <h3 class="additional-title">Affine-Cipher</h3>
+                <span class="tech-pill">JavaScript / Crypto</span>
+              </div>
+              <p class="additional-desc" data-lang="ru">Программная реализация и криптоанализ классического аффинного шифра на JavaScript (Node.js) с применением модульной арифметики и частотного анализа текста.</p>
+              <p class="additional-desc" data-lang="en">Implementation and cryptanalysis of the classical affine substitution cipher in JavaScript (Node.js), exploring modular arithmetic principles and frequency analysis.</p>
+            </div>
+            <div class="additional-footer">
+              <span class="cert-issuer" data-lang="ru">JavaScript &amp; Криптография</span>
+              <span class="cert-issuer" data-lang="en">JavaScript &amp; Cryptography</span>
+              <a href="https://github.com/avroQ/Affine-Cipher" target="_blank" rel="noopener noreferrer" class="btn-cert-pdf" aria-label="View Affine-Cipher on GitHub">GitHub &#8599;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">// 03. ACADEMIC BACKGROUND</div>
+          <h2 class="section-title" data-lang="ru">Образование</h2>
+          <h2 class="section-title" data-lang="en">Education</h2>
+          <p class="section-subtitle" data-lang="ru">Профильная академическая подготовка в ведущих университетах.</p>
+          <p class="section-subtitle" data-lang="en">Specialized academic education at leading universities.</p>
+        </div>
+
+        <div class="education-grid">
+          <!-- HSE MIEM -->
+          <article class="education-card">
+            <div class="education-header">
+              <span class="degree-badge" data-lang="ru">Магистратура</span>
+              <span class="degree-badge" data-lang="en">Master's Degree</span>
+              <h3 class="education-inst" data-lang="ru">НИУ ВШЭ (МИЭМ им. А. Н. Тихонова, Москва)</h3>
+              <h3 class="education-inst" data-lang="en">HSE University (MIEM, Moscow)</h3>
+              <div class="major-title" data-lang="ru">Кибербезопасность</div>
+              <div class="major-title" data-lang="en">Cybersecurity</div>
+            </div>
+            <p class="focus-area" data-lang="ru">
+              <strong>Профиль:</strong> Практический анализ защищенности, криптографические протоколы, безопасность информационных систем.
+            </p>
+            <p class="focus-area" data-lang="en">
+              <strong>Focus:</strong> Applied security assessment, cryptographic protocols, information systems defense.
+            </p>
+          </article>
+
+          <!-- PSU -->
+          <article class="education-card">
+            <div class="education-header">
+              <span class="degree-badge" data-lang="ru">Магистратура</span>
+              <span class="degree-badge" data-lang="en">Master's Degree</span>
+              <h3 class="education-inst" data-lang="ru">ПГНИУ (Механико-математический факультет, Пермь)</h3>
+              <h3 class="education-inst" data-lang="en">Perm State University (PSU, Perm)</h3>
+              <div class="major-title" data-lang="ru">Информационные системы и технологии</div>
+              <div class="major-title" data-lang="en">Information Systems and Technologies</div>
+            </div>
+            <p class="focus-area" data-lang="ru">
+              <strong>Профиль:</strong> Программная инженерия, архитектура информационных систем, анализ данных.
+            </p>
+            <p class="focus-area" data-lang="en">
+              <strong>Focus:</strong> Software engineering, distributed systems architecture, data analysis.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">// 04. CREDENTIALS</div>
+          <h2 class="section-title" data-lang="ru">Сертификаты</h2>
+          <h2 class="section-title" data-lang="en">Certifications</h2>
+          <p class="section-subtitle" data-lang="ru">Подтвержденная квалификация в сфере информационной безопасности от ведущих вендоров.</p>
+          <p class="section-subtitle" data-lang="en">Verified credentials from enterprise cybersecurity industry vendors.</p>
+        </div>
+
+        <div class="cert-grid">
+          <!-- Cert 1: InfoWatch Corporate Internal Threat Defense -->
+          <article class="cert-card" 
+                   data-cert-img="./assets/images/certificates/InfoWatch_Corporate_Internal_Threat_Defense.png"
+                   data-cert-title-ru="InfoWatch: Корпоративная защита от внутренних угроз"
+                   data-cert-title-en="InfoWatch: Corporate Internal Threat Defense"
+                   data-cert-desc-ru="Комплексное администрирование DLP-систем, предотвращение утечек данных и защита конфиденциальной информации компании."
+                   data-cert-desc-en="Enterprise DLP administration, data leakage prevention, and sensitive corporate data defense."
+                   data-cert-pdf="./certificates/InfoWatch_Corporate_Internal_Threat_Defense.pdf">
+            <div class="cert-preview">
+              <img src="./assets/images/certificates/InfoWatch_Corporate_Internal_Threat_Defense.png" 
+                   alt="InfoWatch Corporate Internal Threat Defense Preview" 
+                   class="cert-img" 
+                   loading="lazy">
+              <div class="cert-overlay">
+                <span>&#128269;</span>
+                <span data-lang="ru">Просмотр</span>
+                <span data-lang="en">Preview</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div>
+                <div class="cert-meta">
+                  <span class="cert-issuer">InfoWatch</span>
+                </div>
+                <h3 class="cert-title" data-lang="ru">Корпоративная защита от внутренних угроз</h3>
+                <h3 class="cert-title" data-lang="en">Corporate Internal Threat Defense</h3>
+                <p class="cert-desc" data-lang="ru">Комплексное администрирование DLP-систем, предотвращение утечек данных и защита конфиденциальной информации компании.</p>
+                <p class="cert-desc" data-lang="en">Enterprise DLP administration, data leakage prevention, and sensitive corporate data defense.</p>
+              </div>
+              <div class="cert-actions">
+                <button type="button" class="btn-cert-view">
+                  <span data-lang="ru">Подробнее</span>
+                  <span data-lang="en">View Details</span>
+                </button>
+                <a href="./certificates/InfoWatch_Corporate_Internal_Threat_Defense.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert-pdf">
+                  <span>PDF &#8599;</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Cert 2: InfoWatch Internal Threat Protection and Analytics -->
+          <article class="cert-card" 
+                   data-cert-img="./assets/images/certificates/InfoWatch_Internal_Threat_Protection_and_Analytics.png"
+                   data-cert-title-ru="InfoWatch: Защита от внутренних угроз ИБ: контроль пользователей и аналитика"
+                   data-cert-title-en="InfoWatch: Internal Threat Protection: User Control &amp; Analytics"
+                   data-cert-desc-ru="Мониторинг пользовательской активности, поведенческий анализ (UBA) и расследование инцидентов ИБ."
+                   data-cert-desc-en="User activity monitoring, user behavior analytics (UBA), and security incident investigation."
+                   data-cert-pdf="./certificates/InfoWatch_Internal_Threat_Protection_and_Analytics.pdf">
+            <div class="cert-preview">
+              <img src="./assets/images/certificates/InfoWatch_Internal_Threat_Protection_and_Analytics.png" 
+                   alt="InfoWatch Internal Threat Protection and Analytics Preview" 
+                   class="cert-img" 
+                   loading="lazy">
+              <div class="cert-overlay">
+                <span>&#128269;</span>
+                <span data-lang="ru">Просмотр</span>
+                <span data-lang="en">Preview</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div>
+                <div class="cert-meta">
+                  <span class="cert-issuer">InfoWatch</span>
+                </div>
+                <h3 class="cert-title" data-lang="ru">Защита от внутренних угроз ИБ: контроль пользователей и аналитика</h3>
+                <h3 class="cert-title" data-lang="en">Internal Threat Protection: User Control &amp; Analytics</h3>
+                <p class="cert-desc" data-lang="ru">Мониторинг пользовательской активности, поведенческий анализ (UBA) и расследование инцидентов ИБ.</p>
+                <p class="cert-desc" data-lang="en">User activity monitoring, user behavior analytics (UBA), and security incident investigation.</p>
+              </div>
+              <div class="cert-actions">
+                <button type="button" class="btn-cert-view">
+                  <span data-lang="ru">Подробнее</span>
+                  <span data-lang="en">View Details</span>
+                </button>
+                <a href="./certificates/InfoWatch_Internal_Threat_Protection_and_Analytics.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert-pdf">
+                  <span>PDF &#8599;</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Cert 3: Positive Technologies EdTechLab -->
+          <article class="cert-card" 
+                   data-cert-img="./assets/images/certificates/Positive_Technologies_EdTechLab.png"
+                   data-cert-title-ru="Positive Technologies: EdTechLab"
+                   data-cert-title-en="Positive Technologies: EdTechLab"
+                   data-cert-desc-ru="Практическая подготовка в области кибербезопасности, защиты инфраструктуры и анализа уязвимостей."
+                   data-cert-desc-en="Hands-on cybersecurity training, infrastructure defense, and vulnerability assessment."
+                   data-cert-pdf="./certificates/Positive_Technologies_EdTechLab.pdf">
+            <div class="cert-preview">
+              <img src="./assets/images/certificates/Positive_Technologies_EdTechLab.png" 
+                   alt="Positive Technologies EdTechLab Preview" 
+                   class="cert-img" 
+                   loading="lazy">
+              <div class="cert-overlay">
+                <span>&#128269;</span>
+                <span data-lang="ru">Просмотр</span>
+                <span data-lang="en">Preview</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div>
+                <div class="cert-meta">
+                  <span class="cert-issuer">Positive Technologies</span>
+                </div>
+                <h3 class="cert-title">EdTechLab</h3>
+                <p class="cert-desc" data-lang="ru">Практическая подготовка в области кибербезопасности, защиты инфраструктуры и анализа уязвимостей.</p>
+                <p class="cert-desc" data-lang="en">Hands-on cybersecurity training, infrastructure defense, and vulnerability assessment.</p>
+              </div>
+              <div class="cert-actions">
+                <button type="button" class="btn-cert-view">
+                  <span data-lang="ru">Подробнее</span>
+                  <span data-lang="en">View Details</span>
+                </button>
+                <a href="./certificates/Positive_Technologies_EdTechLab.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert-pdf">
+                  <span>PDF &#8599;</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Cert 4: Positive Technologies PT START -->
+          <article class="cert-card" 
+                   data-cert-img="./assets/images/certificates/Positive_Technologies_PT_START.png"
+                   data-cert-title-ru="Positive Technologies: PT START (Кирилл Перебиковский)"
+                   data-cert-title-en="Positive Technologies: PT START (Kirill Perebikovskii)"
+                   data-cert-desc-ru="Успешное прохождение специализированной программы практической кибербезопасности PT START."
+                   data-cert-desc-en="Completion of specialized practical cybersecurity program PT START."
+                   data-cert-pdf="./certificates/Positive_Technologies_PT_START.pdf">
+            <div class="cert-preview">
+              <img src="./assets/images/certificates/Positive_Technologies_PT_START.png" 
+                   alt="Positive Technologies PT START Preview" 
+                   class="cert-img" 
+                   loading="lazy">
+              <div class="cert-overlay">
+                <span>&#128269;</span>
+                <span data-lang="ru">Просмотр</span>
+                <span data-lang="en">Preview</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div>
+                <div class="cert-meta">
+                  <span class="cert-issuer">Positive Technologies</span>
+                </div>
+                <h3 class="cert-title">PT START</h3>
+                <p class="cert-desc" data-lang="ru">Успешное прохождение специализированной программы практической кибербезопасности PT START.</p>
+                <p class="cert-desc" data-lang="en">Completion of specialized practical cybersecurity program PT START.</p>
+              </div>
+              <div class="cert-actions">
+                <button type="button" class="btn-cert-view">
+                  <span data-lang="ru">Подробнее</span>
+                  <span data-lang="en">View Details</span>
+                </button>
+                <a href="./certificates/Positive_Technologies_PT_START.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert-pdf">
+                  <span>PDF &#8599;</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">// 05. CAPABILITIES &amp; TOOLING</div>
+          <h2 class="section-title" data-lang="ru">Навыки и стек</h2>
+          <h2 class="section-title" data-lang="en">Technical Skills</h2>
+          <p class="section-subtitle" data-lang="ru">Систематизированный стек инструментов защиты, разработки и инфраструктуры.</p>
+          <p class="section-subtitle" data-lang="en">Categorized tooling across cybersecurity, engineering, and infrastructure.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Group 1: Cybersecurity -->
+          <article class="skills-group">
+            <h3 class="group-title">
+              <span class="icon">&#128737;</span>
+              <span data-lang="ru">Информационная безопасность</span>
+              <span data-lang="en">Cybersecurity</span>
+            </h3>
+            <ul class="skill-list" data-lang="ru">
+              <li class="skill-item">Администрирование DLP-систем (контроль каналов передачи данных, мониторинг инцидентов, настройка политик)</li>
+              <li class="skill-item">Hardening Linux (брандмауэр iptables/nftables, PAM, sudo, централизованный аудит системных логов)</li>
+              <li class="skill-item">Современная аутентификация: протоколы WebAuthn, FIDO2, криптографическая привязка (Origin-binding), защита от AiTM-фишинга</li>
+              <li class="skill-item">Анализ защищенности, сканирование уязвимостей, базовый аудит веб-сервисов (OWASP Top 10)</li>
+            </ul>
+            <ul class="skill-list" data-lang="en">
+              <li class="skill-item">Enterprise DLP Administration (data leakage prevention, incident monitoring, policy tuning)</li>
+              <li class="skill-item">Linux Hardening (firewalls iptables/nftables, PAM/sudo access controls, system log auditing)</li>
+              <li class="skill-item">Modern Authentication: WebAuthn, FIDO2 protocols, cryptographic Origin-binding, AiTM phishing resistance</li>
+              <li class="skill-item">Vulnerability Assessment, Security Scanning, Web Application Audits (OWASP Top 10)</li>
+            </ul>
+          </article>
+
+          <!-- Skill Group 2: Programming & Software Engineering -->
+          <article class="skills-group">
+            <h3 class="group-title">
+              <span class="icon">&lt;/&gt;</span>
+              <span data-lang="ru">Разработка ПО</span>
+              <span data-lang="en">Software Engineering</span>
+            </h3>
+            <ul class="skill-list" data-lang="ru">
+              <li class="skill-item">Python (FastAPI, Flask, asyncio, aiogram, requests, psutil)</li>
+              <li class="skill-item">Базовая веб-разработка (JavaScript, PHP, семантический HTML5, CSS3)</li>
+              <li class="skill-item">Реляционные базы данных: PostgreSQL, SQLite</li>
+              <li class="skill-item">Проектирование REST API и микросервисной архитектуры</li>
+              <li class="skill-item">Контроль версий: Git, GitHub</li>
+            </ul>
+            <ul class="skill-list" data-lang="en">
+              <li class="skill-item">Python (FastAPI, Flask, asyncio, aiogram, requests, psutil)</li>
+              <li class="skill-item">Web Fundamentals (JavaScript, PHP, semantic HTML5, CSS3)</li>
+              <li class="skill-item">Relational Databases: PostgreSQL, SQLite</li>
+              <li class="skill-item">REST API Development &amp; Microservice Architecture</li>
+              <li class="skill-item">Version Control: Git, GitHub</li>
+            </ul>
+          </article>
+
+          <!-- Skill Group 3: Infrastructure, DevOps & Observability -->
+          <article class="skills-group">
+            <h3 class="group-title">
+              <span class="icon">&#9881;</span>
+              <span data-lang="ru">Инфраструктура &amp; DevOps</span>
+              <span data-lang="en">Infrastructure &amp; DevOps</span>
+            </h3>
+            <ul class="skill-list" data-lang="ru">
+              <li class="skill-item">Docker (контейнеризация, безопасные образы, запуск от non-root пользователей, multi-stage сборка)</li>
+              <li class="skill-item">Kubernetes (оркестрация микросервисов, конфигурирование Deployments, StatefulSets, Services, Ingress, ConfigMaps/Secrets, сетевые политики и управление ресурсами)</li>
+              <li class="skill-item">GitLab CI/CD (пайплайны автоматической сборки, тестирования и деплоя)</li>
+              <li class="skill-item">Linux (системное администрирование, Debian, Ubuntu, Bash-скриптинг, systemd)</li>
+              <li class="skill-item">Мониторинг и наблюдаемость: стек Prometheus + Grafana (сбор метрик, дашборды, алертинг)</li>
+            </ul>
+            <ul class="skill-list" data-lang="en">
+              <li class="skill-item">Docker (secure minimal containers, non-root users, multi-stage builds)</li>
+              <li class="skill-item">Kubernetes (microservice orchestration, configuring Deployments, StatefulSets, Services, Ingress, ConfigMaps/Secrets, network security policies, and resource management)</li>
+              <li class="skill-item">GitLab CI/CD (automated build, lint, and test execution pipelines)</li>
+              <li class="skill-item">Linux Systems (system administration, Debian, Ubuntu, Bash scripting, systemd)</li>
+              <li class="skill-item">Observability: Prometheus &amp; Grafana (metric collection, telemetry dashboards, alert rules)</li>
+            </ul>
+          </article>
+
+          <!-- Skill Group 4: Machine Learning & Data Analysis -->
+          <article class="skills-group">
+            <h3 class="group-title">
+              <span class="icon">&#9883;</span>
+              <span data-lang="ru">Прикладной ML (Базовый уровень)</span>
+              <span data-lang="en">Applied ML (Foundations)</span>
+            </h3>
+            <ul class="skill-list" data-lang="ru">
+              <li class="skill-item">Прикладное применение ML в задачах ИБ (классификация веб-угроз, фишинговых страниц и URL)</li>
+              <li class="skill-item">Базовые модели классификации (Scikit-learn, LightGBM, ансамблевые методы)</li>
+              <li class="skill-item">Предобработка и анализ данных (Pandas, NumPy, извлечение признаков, TF-IDF)</li>
+              <li class="skill-item">Оценка качества моделей (Precision, Recall, ROC-AUC)</li>
+            </ul>
+            <ul class="skill-list" data-lang="en">
+              <li class="skill-item">Applied ML for cybersecurity workflows (classification of web threats, phishing pages, and URLs)</li>
+              <li class="skill-item">Foundational classification models (Scikit-learn, LightGBM, ensemble techniques)</li>
+              <li class="skill-item">Data preprocessing and analysis (Pandas, NumPy, feature extraction, TF-IDF)</li>
+              <li class="skill-item">Model quality evaluation metrics (Precision, Recall, ROC-AUC)</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacts & Socials Section -->
+    <section id="contacts" class="section-contacts">
+      <div class="container">
+        <div class="contacts-wrapper">
+          <h2 class="contacts-title" data-lang="ru">Контакты</h2>
+          <h2 class="contacts-title" data-lang="en">Contacts &amp; Socials</h2>
+          <p class="contacts-subtitle" data-lang="ru">Открыт к профессиональным предложениям, инженерным задачам и проектам в области информационной безопасности и разработки.</p>
+          <p class="contacts-subtitle" data-lang="en">Open to engineering discussions, cybersecurity challenges, and software development opportunities.</p>
+
+          <div class="contacts-links">
+            <a href="https://t.me/same33322" target="_blank" rel="noopener noreferrer" class="contact-pill" aria-label="Telegram">
+              <span>✈️</span>
+              <span>t.me/same33322</span>
+            </a>
+            <a href="mailto:kp.godbless@gmail.com" class="contact-pill" aria-label="Email">
+              <span>✉️</span>
+              <span>kp.godbless@gmail.com</span>
+            </a>
+            <a href="https://github.com/avroQ" target="_blank" rel="noopener noreferrer" class="contact-pill" aria-label="GitHub Profile">
+              <span>💻</span>
+              <span>GitHub · KP</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p data-lang="ru">&copy; Кирилл Перебиковский (<code>KP</code>). Портфолио инженера по информационной безопасности.</p>
+        <p data-lang="en">&copy; Kirill Perebikovskii (<code>KP</code>). Cybersecurity &amp; Software Engineer Portfolio.</p>
+      </div>
+      <div>
+        <a href="#hero" class="back-to-top" aria-label="Back to top">
+          <span>&uarr;</span>
+          <span data-lang="ru">Наверх</span>
+          <span data-lang="en">Back to Top</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Accessible Certificate Lightbox Modal Dialog -->
+  <div id="cert-modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="modal-title" class="modal-title">Certificate</h3>
+        <button id="modal-close" class="modal-close" type="button" aria-label="Закрыть модальное окно">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-img-wrapper">
+          <img id="modal-img" src="" alt="Certificate Preview" class="modal-img">
+        </div>
+        <p id="modal-desc" class="modal-desc"></p>
+      </div>
+      <div class="modal-footer">
+        <a id="modal-pdf-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          <span data-lang="ru">Открыть оригинал в PDF &#8599;</span>
+          <span data-lang="en">Open Original PDF &#8599;</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/main.js"></script>
+  <!-- Privacy-friendly Web Analytics (GoatCounter) -->
+  <script data-goatcounter="https://avroq.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
